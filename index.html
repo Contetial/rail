@@ -7,19 +7,59 @@
 
     <title>Indian Railway</title>
 
-    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/default.css" /> -->
     <link rel="stylesheet" href="./css/styles.css">
+<div class="header">
+  <img src="img/Indian_Railway.png" alt="Rail_logo" />
+<h1>Central Railway Sr. Divisional Engineer (TRD)</h1>
+</div>
 
 </head>
 <body>
-
-<div class="flipster">
-    <ul>
-    </ul>
+<div id="inputForm">
+	<form class="cbp-mc-form">
+		<h1>Inspection Report</h1>
+		<div class="cbp-mc-column">
+			<label for="first_name">Name</label>
+			<input type="text" id="first_name" name="first_name" placeholder="Name">
+			<label for="employee_id">Employee Code</label>
+			<input type="text" id="employee_id" name="employee_id" placeholder="Employee ID">
+			<label for="StartPT">Start Point</label>
+			<input type="text" id="StartPT" name="StartPT" placeholder="7/1">
+			<label for="EndPT">End Point</label>
+			<input type="text" id="EndPT" name="EndPT" placeholder="7/10">
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option>Choose a country</option>
+				<option>France</option>
+				<option>Italy</option>
+				<option>Portugal</option>
+			</select>
+			<label for="bio">Biography</label>
+			<textarea id="bio" name="bio"></textarea>
+		</div>
+		<div class="cbp-mc-column">
+			<label for="patrol_dt">Date & Time</label>
+			<input type="datetime-local" id="patrol_dt" name="patrol_dt" placeholder="">
+			<label for="affiliations">Affiliations</label>
+			<textarea id="affiliations" name="affiliations"></textarea>
+			<label>Occupation</label>
+			<select id="occupation" name="occupation">
+				<option>Choose an occupation</option>
+				<option>Web Designer</option>
+				<option>Web Developer</option>
+				<option>Hybrid</option>
+			</select>
+			<label for="cat_name">Cat's name</label>
+			<input type="text" id="cat_name" name="cat_name" placeholder="Kitty">
+			<label for="gagdet">Favorite Gadget</label>
+			<input type="text" id="gagdet" name="gagdet" placeholder="Annoy-a-tron">
+		</div>
+		<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Submit" /></div>
+	</form>
 </div>
-
 <p class="stats"></p>
-
+<script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
 <script src="./js/jquery.flipster.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
